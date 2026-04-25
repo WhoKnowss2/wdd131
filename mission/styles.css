@@ -1,0 +1,84 @@
+body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    background: white;
+    margin: 0;
+    padding: 40px 0;
+    color: #333;
+}
+
+#content {
+    max-width: 600px;
+    background: white;
+    padding: 44px 60px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.header {
+    font-family: Utopia, "Times New Roman", Georgia, serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 1.65em;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.header h2 {
+    font-size: .73em;
+    font-weight: 500;
+    color: #0057b8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+.body-text {
+    max-width: 473px;  
+    margin: 0 auto;    
+    letter-spacing: .5px;
+}
+
+.body-text hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    height: 0;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 35px;
+}
+
+.message {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    letter-spacing: .6px;
+}
+
+.message, .list p, .list ol {
+    font-size: .85em;
+    font-weight: 500;
+}
+
+.list p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.list ol {
+    line-height: 1.6;
+    padding-left: 35px;
+}
+
+li {
+    margin-bottom: .8em;
+}
+
+.logo img {
+    display: block;
+    width: 110px;
+    margin: 40px auto 0;
+}
