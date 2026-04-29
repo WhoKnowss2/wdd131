@@ -18,6 +18,7 @@ body {
     font-family: Utopia, "Times New Roman", Georgia, serif;
     text-align: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .header h1 {
@@ -82,3 +83,23 @@ li {
     width: 110px;
     margin: 40px auto 0;
 }
+
+/* dark styles */
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+body.dark #content {
+    background-color: black;
+    border-color: white;
+}
+
+body.dark h1 {
+    color: white;
+}
+
+body.dark h2 {
+    color: #4da3ff; /* accessible blue that gives contrast */
+}
+
