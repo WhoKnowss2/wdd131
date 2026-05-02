@@ -2,6 +2,7 @@ body {
   background-color: #ddd; 
   font-size: 20px; 
 }
+
 #content {
     max-width: 60%;
     border: 1px solid darkgrey;
@@ -33,4 +34,9 @@ img {
 }
 .list {
     list-style-type: none;
+}
+
+.background {
+    background-color: #000;
+    color: white;  
 }

@@ -1,37 +1,32 @@
-const PI = 3.14; 
-let radius = 3;
+const title = document.querySelector("h1");
 
-let area = radius * radius * PI; 
-console.log(area);
+console.log(title);
 
-radius = 20;
-area = radius * radius * PI;
-console.log(area);
+title.textContent = 'Web Page Components';
 
-// type coersion
-const one = 1;
-const two = '2';
-                    
-let result = one * two; 
-console.log(result);
+// document.querySelector('#topics').style.color = 'red'; 
+// let topics = document.querySelector('#topics')
+// topics.style.color = 'red';
+document.getElementById('topics').style.color = 'purple';
 
-result = one + Number(two);
-console.log(result);
+let list = document.querySelector('.list');
+list.style.border = '3px solid black';
 
-//Scope
-let course = "CSE131"; //global scope
-if (true) {
-    let student = "John";
-    console.log(course);
-    console.log(student);
-}
-console.log(course);
+let para = document.querySelector('p');
+// para.style.backgroundColor = "lightblue";
+para.classList.add('background')
+
+// document.querySelector(body).classList.add('background')
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/web.png')
 
 // Drop down
 let selectElem = document.getElementById('webdevlist');
 selectElem.addEventListener('change', function(){
     let codeValue = selectElem.value;
     console.log(codeValue);
+    document.getElementById(codeValue).style.color = 'red';
 });
 
 const dropdown = document.getElementById("webdevlist");
