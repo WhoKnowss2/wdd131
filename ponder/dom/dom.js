@@ -18,8 +18,8 @@ para.classList.add('background')
 
 // document.querySelector(body).classList.add('background')
 
-// const image = document.querySelector('img');
-// image.setAttribute('src', 'images/web.png')
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/web.png')
 
 // Drop down
 let selectElem = document.getElementById('webdevlist');
