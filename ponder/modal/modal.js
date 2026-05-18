@@ -8,6 +8,7 @@ const closeButton = modal.querySelector('.close-viewer');
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
+    if (e.target.tagName !== 'IMG') return;
     console.log(e.target);
 
     const img = e.target;
@@ -21,6 +22,7 @@ function openModal(e) {
     modal.showModal();
 
 }
+
 // Close modal on button click
 closeButton.addEventListener('click', () => {
     modal.close();
