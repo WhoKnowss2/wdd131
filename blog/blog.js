@@ -43,45 +43,21 @@ function articleTemplate(article) {
 	return `
 		<article>
 			<div class="rating">
-				<p>
-					<time datetime="${article.date}">
-						${article.date}
-					</time>
-				</p>
+				<p>	<time datetime="${article.date}"> ${article.date} </time> </p>
 
-				<p aria-label="Age Range: ${article.ages}">
-					${article.ages}
-				</p>
+				<p aria-label="Age Range: ${article.ages}"> ${article.ages} </p>
 
-				<p aria-label="Genre: ${article.genre}">
-					${article.genre}
-				</p>
+				<p aria-label="Genre: ${article.genre}"> ${article.genre} </p>
 
-				<p
-					aria-label="Rating: ${article.stars}"
-					role="img"
-				>
-					${article.stars}
-				</p>
+				<p aria-label="Rating: ${article.stars}" role="img"> ${article.stars} </p>
 			</div>
 
 			<section
-				class="review"
-				aria-labelledby="title-${article.id}"
-			>
-				<h2 id="title-${article.id}">
-						${article.title}
-					</a>
-				</h2>
+				class="review" aria-labelledby="title-${article.id}">
+				<h2 id="title-${article.id}"> ${article.title} </h2>
+				<img src="${article.imgSrc}" alt="${article.imgAlt}">
 
-				<img
-					src="${article.imgSrc}"
-					alt="${article.imgAlt}"
-				>
-
-				<p>
-					${article.description}
-				</p>
+				<p> ${article.description} </p>
 			</section>
 		</article>
 	`;
