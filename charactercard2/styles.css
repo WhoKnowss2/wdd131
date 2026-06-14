@@ -54,16 +54,5 @@
 
   button:hover {
     background-color: #58605a;
-  }
-
-  /* Reset h1 browser defaults so .name looks unchanged */
-  h1.name {
-    margin: -4px 0 20px 0;
-  }
-
-  /* Visible focus ring for keyboard users (Lighthouse requirement) */
-  button:focus-visible {
-    outline: 3px solid #f0f4f8;
-    outline-offset: 3px;
   }            
                     

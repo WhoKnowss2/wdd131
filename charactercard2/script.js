@@ -31,9 +31,9 @@ function renderCard() {
 
   container.innerHTML = `
     <div class="card">
-      <img class="image" src="${creature.image}" alt="${creature.name} the ${creature.class}" width="400" height="400">
+      <img class="image" src="${creature.image}" alt="${creature.name}">
       
-      <h1 class="name">${creature.name}</h1>
+      <div class="name">${creature.name}</div>
 
       <div class="stats">
         <p><strong>Class:</strong> ${creature.class}</p>
@@ -42,8 +42,8 @@ function renderCard() {
       </div>
 
       <div class="buttons">
-        <button id="attackBtn" aria-label="Attack ${creature.name}">Attack</button>
-        <button id="levelBtn" aria-label="Level up ${creature.name}">Level Up</button>
+        <button id="attackBtn">Attack</button>
+        <button id="levelBtn">Level Up</button>
       </div>
     </div>
   `;
