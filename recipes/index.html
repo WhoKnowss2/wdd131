@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find delicious recipes for every occasion.">
+    <title>RecipeBook</title>
+
+        
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:description" content="Find delicious recipes for every occasion">
+    <meta property="og:url" content="https://whoknowss2.github.io/wdd131/recipes">
+    <meta property="og:image" content="https://whoknowss2.github.io/wdd131/recipes/images/recipebookog.png">
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="Social Preview Image">
+    <meta name="twitter:title" content="RecipeBook">
+    <meta name="twitter:description" content="Find delicious recipes for every occasion">
+    <meta name="twitter:image" content="https://whoknowss2.github.io/wdd131/recipes/images/recipebookog.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="https://whoknowss2.github.io/wdd131/recipes/images/apple-touch-icon.png">
+                    
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="recipe-header">
+        <img src="images/recipe-book.png" alt="Recipe Book Logo">
+        <h1>RecipeBook</h1>
+    </header>
+
+    <main class="content">    
+        <form class="recipe-search">
+            <label for="search" class="sr-only">Search Recipes</label>
+            <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Find a recipe">
+
+            <button class="search-btn" type="submit" aria-label="Search recipes">
+                <img src="images/search.svg" alt="">
+            </button>
+        </form>
+
+        <hr>
+
+        <article class="recipe-card">
+
+            <img
+                src="images/apple-crisp.jpg"
+                alt="Apple Crisp with vanilla ice cream">
+
+            <div class="recipe-info">
+
+                <span class="recipe-category">
+                    dessert
+                </span>
+
+                <h2 class="recipe-title">
+                    Apple Crisp
+                </h2>
+
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+
+                <p class="recipe-description">
+                    This apple crisp recipe is a simple yet delicious fall dessert
+                    that's great served warm with vanilla ice cream.
+                </p>
+
+            </div>
+
+        </article>
+
+    </main>        
+
+    <footer>
+
+        <div class="social">
+            <a href="#"><img src="images/instagram_icon.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest"></a>
+        </div>
+
+        <p class="attribution">
+            
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                   
+                
+        </p>
+
+    </footer>
+
+</body>
+</html>
