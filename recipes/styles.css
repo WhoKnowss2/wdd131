@@ -96,10 +96,15 @@ hr {
     border: 2px solid #b0b0b0;
     background: #efefef;
     padding: .25rem .5rem;
-    margin-top: .25rem;
+    /* margin-top: .25rem; */
     font-family: sans-serif, Arial, Helvetica;
     font-size: .75rem;
 }
+
+.recipe-tags {
+    display: flex;
+    flex-wrap: wrap;
+} 
 
 .recipe-title {
     font-family: "Amatic SC", sans-serif, Arial, Helvetica;
@@ -170,9 +175,13 @@ hr {
     }
 
     .recipe-category {
-        display: flex;
         margin-top: 0;
         font-size: .85rem;
+    }
+
+    .recipe-tags {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .recipe-title {
@@ -194,7 +203,7 @@ hr {
 
     .recipe-description {
         display: block;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     footer {
