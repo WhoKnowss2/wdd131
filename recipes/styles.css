@@ -46,7 +46,7 @@ input:focus {
 .recipe-search {
     display: flex;
     border: 2px solid #333;
-    border-radius: 12px;
+    border-radius: 6px;
     overflow: hidden;
 }
 
