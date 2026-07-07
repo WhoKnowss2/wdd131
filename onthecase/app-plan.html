@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>On The Case Project Plan</h1>
+			<h2>Kathy Christensen</h2>
+			<h2>WDD 131</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>On the Case is a detective-themed story mixer inspired by Mad Libs. Users provide a name, animal, place, adjective, verb, and object, 
+				and the application combines those words with randomized story segments to create a unique mystery.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The target audience is children, teens, and adults who enjoy interactive detective stories, word games, and creative storytelling. The 
+				application is designed to be easy to use, visually engaging, and entertaining for casual users of all ages.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>When the user clicks "Create Story" (which has an event listener) javascript will read the values from their input for name, animal, 
+				place, adjective, verb, and object. Validation will check that all 6 form fields have content filled in through conditional branching. 
+				The story will be composed through randomly selected story parts consisting of one beginning, one middle, and one ending that are held 
+				in arrays and joined by javascript. Also, Javascript will replace placeholders within the story parts with the user input words - 
+				example: animal / cat. 
+			</p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="images/logo.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/2b2b2b-f2e4c8-b08d57-4a3728-a8a19a"
+				target="_blank"
+				>https://coolors.co/2b2b2b-f2e4c8-b08d57-4a3728-a8a19a</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#2B2B2B]</td>
+						<td class="secondary">[#F2E4C8]</td>
+						<td class="accent1">[#B08D57]</td>
+						<td class="accent2">[#4A3728]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h3>Pseudocode for your project</h3>
+
+			<pre>When the page loads
+	Display the input form 
+		fields for name, animal, place, adjective, verb, and object along with a button to submit
+
+When the user clicks the create story button    
+	Get the six input values from the form 
+
+	Randomly select one beginning
+
+	Randomly select one middle
+
+	Randomly select one ending
+
+	Replace all placeholders with the user's input words from the form  
+
+
+Combine the three story sections into one story
+
+If the screen is mobile
+	Display the first section 
+	Wait for continue
+	Display the second section   
+	Wait for Solve the Case
+	Display the final section 
+
+Otherwise
+	Display the complete story 
+			
+				</pre>	
+			
+
+			<h3>Wireframes</h3>
+			<p>
+				Create wireframes for your project page(s). One for each page and list them
+				here. 
+			</p>
+
+			<h3>Mobile</h3>
+			<p>
+				The header graphic isn't final for mobile or desktop.
+			</p>
+			<img src="images/mobile.png" class="mobile" alt="home page mobile wireframe" />
+
+			<h3>Desktop / Laptop</h3>
+			<p>
+				
+			</p>
+			<img src="images/desktop.png" class="desktop" alt="home page desktop wireframe" />
+		</main>
+	</body>
+</html>
