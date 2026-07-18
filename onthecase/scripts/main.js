@@ -154,5 +154,5 @@ const storyForm = document.querySelector("#story-form");
 const storyOutput = document.querySelector("#story-output");
 
 
-// Create story listener
+// Story listener for Create Story button
 storyForm.addEventListener("submit", createStory);
