@@ -59,17 +59,28 @@ const endings = [
 
 // Get the user words from the story mixer form
 function getUserWords() {
+    let placeInput = document.querySelector("#place").value.trim();
+
+    // Add leading the if there is no leading the, and it doesn't begin with a capital letter
+    if (!placeInput.match(/^the\s+/i) && !placeInput.match(/^[A-Z]/)) {
+        placeInput = "the " + placeInput;
+    }
+
+
+    
+
     const words = {
         NAME: document.querySelector("#name").value,
-        ANIMAL: document.querySelector("#animal").value,
-        PLACE: document.querySelector("#place").value,
-        ADJECTIVE: document.querySelector("#adjective").value,
-        VERB: document.querySelector("#verb").value,
-        OBJECT: document.querySelector("#object").value
+        ANIMAL: document.querySelector("#animal").value.toLowerCase(),
+        PLACE: placeInput,  // keep original casing
+        ADJECTIVE: document.querySelector("#adjective").value.toLowerCase(),
+        VERB: document.querySelector("#verb").value.toLowerCase(),
+        OBJECT: document.querySelector("#object").value.toLowerCase()
     };
 
     return words;
 }
+
 
 
 function chooseRandomSegment(array) {

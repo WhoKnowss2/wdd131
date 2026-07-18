@@ -93,7 +93,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    width: fit-content;
+    min-width: 12em;
+    min-height: 3em;
     margin: .4rem auto 0;
     padding: 0.5rem .8rem;
     border: none;
@@ -142,6 +143,7 @@ body {
     height: auto;
     right: 1rem;
     bottom: 1rem;
+    opacity: .5;
 }
 
 /* story panel end */
@@ -195,4 +197,12 @@ footer p {
     #story-output {
         font-size: 1.2rem;
     }
+
+    #create-story {
+        min-width: 14em; 
+        min-height: 3.5em;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+
 }
