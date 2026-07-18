@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     role="img"
+     aria-labelledby="title">
+  <title id="title">Object cube icon</title>
+
+  <!-- Top face -->
+  <path d="M50 10 L86 30 L50 50 L14 30 Z" fill="#000000"/>
+
+  <!-- Left face -->
+  <path d="M14 34 L47 52 L47 90 L14 71 Z" fill="#000000"/>
+
+  <!-- Right face -->
+  <path d="M53 52 L86 34 L86 71 L53 90 Z" fill="#000000"/>
+</svg>

@@ -1,0 +1,171 @@
+<body>
+    <header class="hero">
+        <h1 class="sr-only">On The Case: A Mystery Story Mixer</h1>
+
+        <img
+            class="hero-image"
+            src="images/onthecase-header.webp"
+            alt="On The Case: A Mystery Story Mixer"
+        >
+    </header>
+
+    <main>
+        <!-- Word entry form -->
+        <section class="mixer-panel" aria-labelledby="form-instructions">
+            <p id="form-instructions" class="instructions">
+                Enter your words below, then click
+                <strong>Create Story</strong> to solve the mystery!
+            </p>
+
+            <form id="story-form">
+                <div class="form-field">
+                    <img
+                        class="field-icon"
+                        src="images/name-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="e.g., Alex"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <img
+                        class="field-icon"
+                        src="images/animal-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <label for="animal">Animal</label>
+
+                    <input
+                        type="text"
+                        id="animal"
+                        name="animal"
+                        placeholder="e.g., cat"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <img
+                        class="field-icon"
+                        src="images/place-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <label for="place">Place</label>
+
+                    <input
+                        type="text"
+                        id="place"
+                        name="place"
+                        placeholder="e.g., old library"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <img
+                        class="field-icon"
+                        src="images/adjective-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <label for="adjective">Adjective</label>
+
+                    <input
+                        type="text"
+                        id="adjective"
+                        name="adjective"
+                        placeholder="e.g., mysterious"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <img
+                        class="field-icon"
+                        src="images/verb-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <label for="verb">Verb</label>
+
+                    <input
+                        type="text"
+                        id="verb"
+                        name="verb"
+                        placeholder="e.g., discovered"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <img
+                        class="field-icon"
+                        src="images/object-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <label for="object">Object</label>
+
+                    <input
+                        type="text"
+                        id="object"
+                        name="object"
+                        placeholder="e.g., hidden key"
+                        required
+                    >
+                </div>
+
+                <button type="submit" id="create-story">
+                    <img
+                        src="images/search-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+                    Create Story
+                </button>
+            </form>
+        </section>
+
+        <!-- Generated story -->
+        <section
+            id="story-panel"
+            class="story-panel"
+            aria-label="Generated mystery story"
+        >
+            <div id="story-output" aria-live="polite">
+                <p>
+                    Your mystery will appear here after you enter your words
+                    and select <strong>Create Story</strong>.
+                </p>
+            </div>
+
+            <img
+                class="fingerprint-decoration"
+                src="images/fingerprint.svg"
+                alt=""
+                aria-hidden="true"
+            >
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 On The Case</p>
+    </footer>
+</body>

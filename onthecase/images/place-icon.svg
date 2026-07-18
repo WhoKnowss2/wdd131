@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     role="img"
+     aria-labelledby="title">
+  <title id="title">Place marker icon</title>
+
+  <path
+    d="M50 8
+       C32 8 18 22 18 40
+       C18 57 34 77 50 96
+       C66 77 82 57 82 40
+       C82 22 68 8 50 8
+       Z
+
+       M50 25
+       C58 25 65 32 65 40
+       C65 48 58 55 50 55
+       C42 55 35 48 35 40
+       C35 32 42 25 50 25
+       Z"
+    fill="#000000"
+    fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Special+Elite&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.hero {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* mixer panel begin */
+
+.mixer-panel {
+    margin: 0.5rem;
+    padding: 1rem;
+    padding-bottom: .75rem;
+    background-color: #f4e4c5;
+    border-radius: 0.75rem;
+    color: #111111;
+}
+
+.instructions {
+    margin: 0 0 1rem;
+    text-align: center;
+    font-size: .7rem;
+    line-height: 1;
+}
+
+#story-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: 1.5rem 5rem 1fr;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.field-icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    object-fit: contain;
+    justify-self: center;
+}
+
+.form-field label {
+    font-size: 0.8rem;
+}
+
+.form-field input {
+    width: 90%;
+    min-width: 0;
+    padding: 0.45em 0.6rem;
+    border: 0.0625rem solid #999;
+    border-radius: 0.35rem;
+    background-color: #ffffff73;
+    font-size: 0.8rem;
+}
+
+.form-field input:focus {
+    outline: 0.15rem solid #6b4c28;
+    outline-offset: 0.1rem;
+}
+
+#create-story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: fit-content;
+    margin: .4rem auto 0;
+    padding: 0.5rem .8rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #080808;
+    color: white;
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+    font-size: .8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#create-story img {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+/* mixer panel end */
+
+/* story panel begin */
+
+.story-panel {
+    position: relative;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    min-height: 16rem;
+    background-color: #f4e4c5;
+    border-radius: 0.75rem;
+    color: #111;
+    line-height: 1.5;
+    font-size: .9rem;
+}
+
+#story-output {
+    padding-right: 2.5rem;
+}
+
+#story-output p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.fingerprint-decoration {
+    position: absolute;
+    width: 5rem;
+    height: auto;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* story panel end */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media screen and (min-width: 50rem) {
+    .hero img {
+        max-width: 65rem;
+    }
+
+    main {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .mixer-panel,
+    .story-panel {
+        flex: 1;
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .story-panel {
+        font-size: 1.2;
+        line-height: 1.6;
+    }
+
+    .form-field {
+        grid-template-columns: 2rem 6.5rem 1fr;
+        gap: 0.75rem;
+    }
+
+    .form-field label {
+        font-size: 1rem;
+    }
+
+    .form-field input,
+    .instructions,
+    #story-output {
+        font-size: 1.2rem;
+    }
+}

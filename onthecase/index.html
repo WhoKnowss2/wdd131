@@ -6,33 +6,105 @@
     <title>On The Case</title>
  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Snortleblat Character Card">
-    <meta property="og:description" content="A character card featuring Snortleblat, a Swamp Beast with interactive stats.">
-    <meta property="og:url" content="https://whoknowss2.github.io/wdd131/project/images"> 
-    <meta property="og:image" content="https://whoknowss2.github.io/wdd131/project/images">
+    <meta property="og:title" content="On The Case: A Mystery Story Mixer">
+    <meta property="og:description" content="Create a one-of-a-kind detective mystery using your own words in this interactive story mixer.">
+    <meta property="og:url" content="https://whoknowss2.github.io/wdd131/onthecase/"> 
+    <meta property="og:image" content="https://whoknowss2.github.io/wdd131/onthecase/images/onthecaseog.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Snortleblat Character Card">
-    <meta name="twitter:description" content="A character card featuring Snortleblat, a Swamp Beast with interactive stats.">
-    <meta name="twitter:image" content="https://whoknowss2.github.io/wdd131/charactercard/images/snortleblatog.png">
+    <meta name="twitter:title" content="On The Case: A Mystery Story Mixer">
+    <meta name="twitter:description" content="Create a one-of-a-kind detective mystery using your own words in this interactive story mixer.">
+    <meta name="twitter:image" content="https://whoknowss2.github.io/wdd131/onthecase/images/onthecaseog.png">
 
     <!-- One favicon (ICO works everywhere) -->
     <link rel="icon" href="favicon.ico">
 
     <!-- One Apple Touch Icon (iOS home screen) -->
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
 
 </head>
+
 <body>
     
-    <main>
-      <div id="cardContainer"></div>
-    </main>
+    <header class="hero">
+        <h1 class="sr-only">On The Case: A Mystery Story Mixer</h1>
 
+        <img class="hero-image" src="images/on-the-case-header.png" alt="On The Case: A Mystery Story Mixer"        >
+    </header>
+
+   <main>
+    <!-- Word entry form -->
+    <section class="mixer-panel" aria-labelledby="form-instructions">
+        <p id="form-instructions" class="instructions">
+            Enter your words below, then click
+            <strong>CREATE STORY</strong> to solve the mystery!
+        </p>
+
+        <form id="story-form">
+            <div class="form-field">
+                <img src="images/name-icon.svg" alt="" class="field-icon" aria-hidden="true">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Alex" required>
+            </div>
+
+            <div class="form-field">
+                <img src="images/animal-icon.svg" alt="" class="field-icon" aria-hidden="true">
+                <label for="animal">Animal</label>
+                <input type="text" id="animal" name="animal" placeholder="e.g., cat" required>
+            </div>
+
+            <div class="form-field">
+                <img src="images/place-icon.svg" alt="" class="field-icon" aria-hidden="true">
+                <label for="place">Place</label>
+                <input type="text" id="place" name="place" placeholder="e.g., old library" required>
+            </div>
+
+            <div class="form-field">
+                <img src="images/adjective-icon.svg" alt="" class="field-icon" aria-hidden="true">
+                <label for="adjective">Adjective</label>
+                <input type="text" id="adjective" name="adjective" placeholder="e.g., mysterious" required>
+            </div>
+
+            <div class="form-field">
+                <img src="images/verb-icon.svg" alt="" class="field-icon" aria-hidden="true">
+                <label for="verb">Verb</label>
+                <input type="text" id="verb" name="verb" placeholder="e.g., discovered" required>
+            </div>
+
+            <div class="form-field">
+                <img src="images/object-icon.svg" alt="" class="field-icon" aria-hidden="true">
+                <label for="object">Object</label>
+                <input type="text" id="object" name="object" placeholder="e.g., hidden key" required>
+            </div>
+
+            <button type="submit" id="create-story">
+                <img src="images/search-icon.svg" alt="" aria-hidden="true">
+                Create Story
+            </button>
+        </form>
+    </section>
+
+    <!-- Generated story -->
+    <section id="story-panel" class="story-panel" aria-label="Generated mystery story">
+        <div id="story-output" aria-live="polite">
+            <p>
+                Your mystery will appear here after you enter your words
+                and select <strong>CREATE STORY</strong>.
+            </p>
+        </div>
+
+        <img src="images/fingerprint.svg" alt="" class="fingerprint-decoration" aria-hidden="true">
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 On The Case</p>
+    </footer>
 
 </body>
+
 </html>

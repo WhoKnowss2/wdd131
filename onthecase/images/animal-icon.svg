@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     role="img"
+     aria-labelledby="title">
+  <title id="title">Paw print icon</title>
+
+  <!-- Toes -->
+  <ellipse cx="30" cy="39" rx="10" ry="13" fill="#000000"/>
+  <ellipse cx="46" cy="24" rx="9" ry="14" fill="#000000"/>
+  <ellipse cx="65" cy="24" rx="9" ry="14" fill="#000000"/>
+  <ellipse cx="82" cy="41" rx="10" ry="13" fill="#000000"/>
+
+  <!-- Main paw pad -->
+  <path
+    d="M52 48
+       C43 48 37 55 33 63
+       C29 71 32 81 41 84
+       C46 86 50 82 55 82
+       C60 82 64 86 70 84
+       C79 81 82 71 78 63
+       C74 55 67 48 58 48
+       Z"
+    fill="#000000"/>
+</svg>
