@@ -186,11 +186,6 @@ footer p {
         padding: 1.5rem;
     }
 
-    .story-panel {
-        font-size: 1.2;
-        line-height: 1.6;
-    }
-
     .form-field {
         grid-template-columns: 2rem 6.5rem 1fr;
         gap: 0.75rem;
