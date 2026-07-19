@@ -1,4 +1,4 @@
-// Needed for story panel to show story parts
+// Track the generated story sections and the section currently displayed
 let storyParts = [];     // holds the 3 completed story sections
 let currentPart = 0;     // 0 = beginning, 1 = middle, 2 = ending
 
@@ -61,26 +61,19 @@ const endings = [
 function getUserWords() {
     let placeInput = document.querySelector("#place").value.trim();
 
-    // Add leading the if there is no leading the, and it doesn't begin with a capital letter
-    if (!placeInput.match(/^the\s+/i) && !placeInput.match(/^[A-Z]/)) {
-        placeInput = "the " + placeInput;
+    if (placeInput !== "" && !/^the\s+/i.test(placeInput) && !/^[A-Z]/.test(placeInput)) {
+        placeInput = `the ${placeInput}`;
     }
 
-
-    
-
-    const words = {
-        NAME: document.querySelector("#name").value,
-        ANIMAL: document.querySelector("#animal").value.toLowerCase(),
-        PLACE: placeInput,  // keep original casing
-        ADJECTIVE: document.querySelector("#adjective").value.toLowerCase(),
-        VERB: document.querySelector("#verb").value.toLowerCase(),
-        OBJECT: document.querySelector("#object").value.toLowerCase()
+    return {
+        NAME: document.querySelector("#name").value.trim(),
+        ANIMAL: document.querySelector("#animal").value.trim().toLowerCase(),
+        PLACE: placeInput,
+        ADJECTIVE: document.querySelector("#adjective").value.trim().toLowerCase(),
+        VERB: document.querySelector("#verb").value.trim().toLowerCase(),
+        OBJECT: document.querySelector("#object").value.trim().toLowerCase()
     };
-
-    return words;
 }
-
 
 
 function chooseRandomSegment(array) {
@@ -88,7 +81,7 @@ function chooseRandomSegment(array) {
     return array[randomIndex];
 }
 
-// Place user words 
+// Replace story placeholders with the user's words
 function replaceWords(text, words) {
     let updatedText = text;
 
@@ -106,7 +99,7 @@ function createStory(event) {
 
     const storyButton = document.querySelector("#create-story");
 
-    // Only collect and validate words on the first click
+    // The flow of story parts 1st click ends with Continue Investigation and 2nd Solve the Case
     if (currentPart === 0) {
 
         const words = getUserWords();
@@ -137,17 +130,19 @@ function createStory(event) {
     }
 
     // Show the current part
-    storyOutput.innerHTML = `<p>${storyParts[currentPart]}</p>`;
+    const paragraph = document.createElement("p");
+    paragraph.textContent = storyParts[currentPart];
+    storyOutput.replaceChildren(paragraph);
 
 
-           // The flow of story parts 1st click ends with Continue Investigation and 2nd Solve the Case
+        // The flow of story parts 1st click ends with Continue Investigation and 2nd Solve the Case
         if (currentPart === 0) {
             storyButton.textContent = "Continue Investigation";
         } else if (currentPart === 1) {
             storyButton.textContent = "Solve the Case";
         }
 
-        // Go to the next story part
+        // After displaying all three sections, reset for a new story
         currentPart++;
 
         // If the user finished all 3 parts, reset for a new story
@@ -165,5 +160,5 @@ const storyForm = document.querySelector("#story-form");
 const storyOutput = document.querySelector("#story-output");
 
 
-// Story listener for Create Story button
+// Handle form submission from the Create Story button
 storyForm.addEventListener("submit", createStory);
